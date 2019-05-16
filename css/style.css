@@ -1,0 +1,70 @@
+body{
+    background-color: #9d8b84;
+    font-family: 'Roboto', sans-serif;
+    padding: 1px;
+
+}
+.visually_hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
+}
+
+
+.site_search span {
+    position: relative;
+    display: inline-block;
+    width:34px;
+    height:34px;
+    background-color: #ffffff;
+    opacity:0.2;
+    border-radius: 50%;
+    color:transparent;
+
+}
+
+.site_search{
+    position: relative;
+    display: inline-block;
+    height:34px;
+    background-image: url("../img/search.svg");
+    background-position:50% 50%;
+    background-repeat: no-repeat;
+
+}
+
+.our_capability {
+    width: 1146px;
+    height: 306px;
+    box-sizing: border-box;
+    position: relative;
+    background-image: url("../img/wafer_background.png");
+    margin: 0 auto;
+    color:#323232;
+    padding: 20px 20px;
+}
+
+.capability_whois{
+    margin:0;
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+.capability_list{
+    margin-left: 50px;
+    padding-left: 0;
+    padding-top: 1px;
+    font-size: 16px;
+    line-height: 1.375;
+    column-count:2;
+    column-width: 476px;
+    column-gap: 90px;
+}
+
+.capability_list li{
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
