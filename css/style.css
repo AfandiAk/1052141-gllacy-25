@@ -13,37 +13,41 @@ body{
 }
 
 
-.site_search span {
-    position: relative;
+.site_search svg {
+    display: block;
+    margin: auto;
+    fill: white;
+    width:17px;
+    height:17px;
+    opacity: 1;
+}
+
+.site_search svg:hover{
+    fill: red;
+ }
+
+
+
+.site_search{
     display: inline-block;
-    width:34px;
-    height:34px;
+    width: 33px;
+    height: 33px;
     background-color: #ffffff;
     opacity:0.2;
     border-radius: 50%;
-    color:transparent;
-
-}
-
-.site_search{
-    position: relative;
-    display: inline-block;
-    height:34px;
-    background-image: url("../img/search.svg");
-    background-position:50% 50%;
-    background-repeat: no-repeat;
+    padding: 1px;
 
 }
 
 .our_capability {
     width: 1146px;
-    height: 306px;
     box-sizing: border-box;
     position: relative;
-    background-image: url("../img/wafer_background.png");
+    background-image: url("../img/wafer_background.jpg");
     margin: 0 auto;
     color:#323232;
     padding: 20px 20px;
+    border-radius: 20px;
 }
 
 .capability_whois{
