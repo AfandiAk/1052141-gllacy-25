@@ -1,43 +1,103 @@
-body{
+body {
     background-color: #9d8b84;
     font-family: 'Roboto', sans-serif;
     padding: 1px;
 
 }
+
 .visually_hidden {
     position: absolute;
     overflow: hidden;
     clip: rect(0 0 0 0);
-    height: 1px; width: 1px;
-    margin: -1px; padding: 0; border: 0;
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
 }
 
+header,
+header a{
+    color: #ffffff;
+}
 
-.site_search svg {
+.navigation_block{
+    display: inline-block;
+    vertical-align: top;
+    color: #ffffff;
+}
+.header_func_button{
+    display: inline-block;
+    float: right;
+
+}
+
+.schedule_and_phone {
+    float: right;
+}
+.catalog_submenu,
+.catalog_submenu a{
+    color: #323232;
+}
+.catalog_submenu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    transition: 0.5s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+}
+
+.submenu_control:hover .catalog_submenu{
+     transform: scaleY(1);
+}
+
+.schedule_and_phone>span{
     display: block;
-    margin: auto;
-    fill: white;
-    width:17px;
-    height:17px;
-    opacity: 1;
+}
+.submenu_control{
+    position: relative;
+}
+.navigation_block > li{
+    display: inline-block;
+    font-weight: bold;
+    vertical-align: top;
+
 }
 
-.site_search svg:hover{
-    fill: red;
- }
-
-
-
-.site_search{
+.site_search {
+    position: relative;
     display: inline-block;
     width: 33px;
     height: 33px;
-    background-color: #ffffff;
-    opacity:0.2;
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
     padding: 1px;
-
 }
+
+.site_search svg {
+    position: absolute;
+    display: block;
+    margin: auto;
+    fill: white;
+    width: 17px;
+    height: 17px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.site_search:hover svg {
+    fill: #323232;
+}
+
+.site_search:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
 
 .our_capability {
     width: 1146px;
@@ -45,29 +105,29 @@ body{
     position: relative;
     background-image: url("../img/wafer_background.jpg");
     margin: 0 auto;
-    color:#323232;
+    color: #323232;
     padding: 20px 20px;
     border-radius: 20px;
 }
 
-.capability_whois{
-    margin:0;
+.capability_whois {
+    margin: 0;
     font-size: 24px;
     line-height: 1.25;
 }
 
-.capability_list{
+.capability_list {
     margin-left: 50px;
     padding-left: 0;
     padding-top: 1px;
     font-size: 16px;
     line-height: 1.375;
-    column-count:2;
+    column-count: 2;
     column-width: 476px;
     column-gap: 90px;
 }
 
-.capability_list li{
+.capability_list li {
     list-style-type: none;
     margin-top: 0;
     margin-bottom: 30px;
