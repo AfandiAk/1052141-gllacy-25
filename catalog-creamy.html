@@ -26,14 +26,55 @@
             <li><a href="#">О компании</a></li>
         </ul>
         <div class="header_func_button">
-            <a class="site_search" href="#">
+            <a class="site_search" href="#"><!-- кнопка ПОИСКА   -->
                 <span class="visually_hidden" >Поиск</span>
                 <svg width="17" height="17" viewBox="0 0 17 17">
                     <path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
                 </svg>
             </a>
-            <a class="login_button" href="#"><span>Вход</span></a>
-            <a class="header_shoping_cart" href="#"><span>2 товара</span></a>
+            <!-- выпадающая форма для поиска -->
+            <div class="search_popup_container">
+                <form class="search_form" method="get" action="http://echo.htmlacademy.ru">
+                    <input type="search" name="site_search" placeholder="Что ищем?">
+                </form>
+            </div>
+            <a class="login_button" href="#"><span>Вход</span></a> <!-- ссылка ВХОД   -->
+            <!-- Popup форма входа -->
+            <div class="enter_popup_container">
+                <form class="login_form" method="get" action="http://echo.htmlacademy.ru">
+                    <input type="email"  name="email" placeholder="Электронная почта" >
+                    <input type="password"  name="password" placeholder="Пароль" >
+                    <input type="submit" value="Войти" >
+                    <div class="reference_container">
+                    </div>
+                </form>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+            </div>
+            <a class="header_shoping_cart" href="#"><span>2 товара</span></a> <!-- ссылка/кнопка КОРЗИНА   -->
+            <!-- выпадающее меню Корзина   -->
+            <div class="popup_shoping_cart_container">
+                <div class="shoping_cart_item_card_container">
+                    <button type="button" name="btn_delete" class="item_delete">Удалить товар</button>
+                    <img src="img/creamy_orange.jpg" alt="Сливочно апельсиновое с цитрусовой стружкой" width="33px">
+                    <span class="description">Пломбир с апельсиновым джемом</span>
+                    <span class="cost">1,5 кг х </span><span class="price">200 руб.</span>
+                    <span class="total_price">300руб.</span>
+                </div>
+                <div class="shoping_cart_item_card_container">
+                    <div class="shoping_cart_item_card_container">
+                        <button type="button" name="btn_delete" class="item_delete">Удалить товар</button>
+                        <img src="img/creamy_strawberry.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="33px">
+                        <span class="description">Клубничный пломбир с присыпкой из белого шоколада</span>
+                        <span class="cost">1,5 кг х </span><span class="price">300 руб.</span>
+                        <span class="total_price">450руб.</span>
+                    </div>
+                </div>
+                <div class="total_shoping_cart_container">
+                    <span>Итого:</span><span>750 руб.</span>
+                    <a href="#">Оформить заказ</a>
+                </div>
+            </div>
         </div>
     </nav>
     <div class="schedule_and_phone">
@@ -154,31 +195,7 @@
     </div>
 </footer>
 
-<!-- popup Корзина   -->
-<div class="popup_shoping_cart_container">
-    <div class="shoping_cart_item_card_container">
-        <ul class="shoping_cart_item_card">
-            <li class="del">Удалить товар</li>
-            <li class="image"><img src="img/creamy_orange.jpg" alt="Сливочно апельсиновое с цитрусовой стружкой" width="33px"></li>
-            <li class="description">Пломбир с апельсиновым джемом</li>
-            <li class="cost">1,5 кг х <span class="price">200 руб.</span></li>
-            <li class="total_price">300руб.</li>
-        </ul>
-    </div>
-    <div class="shoping_cart_item_card_container">
-        <ul class="shoping_cart_item_card">
-            <li class="del">Удалить товар</li>
-            <li class="image"><img src="img/creamy_strawberry.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="33px"></li>
-            <li class="description">Клубничный пломбир с присыпкой из белого шоколада</li>
-            <li class="cost">1,5 кг х <span class="price">300 руб.</span></li>
-            <li class="total_price">450руб.</li>
-        </ul>
-    </div>
-    <div class="total_shoping_cart_container">
-        <span>Итого:</span><span>750 руб.</span>
-        <button type="button" name="confirm_btn">Оформить заказ</button>
-    </div>
-</div>
+
 
 
 

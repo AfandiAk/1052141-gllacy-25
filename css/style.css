@@ -1,6 +1,6 @@
 body {
     background-color: #9d8b84;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', 'Arial', 'Helvetica', sans-serif;
     padding: 1px;
 
 }
@@ -16,29 +16,19 @@ body {
     border: 0;
 }
 
-header,
-header a{
-    color: #ffffff;
-}
+
 
 .navigation_block{
-    display: inline-block;
-    vertical-align: top;
-    color: #ffffff;
+
 }
 .header_func_button{
-    display: inline-block;
-    float: right;
 
 }
 
 .schedule_and_phone {
-    float: right;
+
 }
-.catalog_submenu,
-.catalog_submenu a{
-    color: #323232;
-}
+
 .catalog_submenu{
     position: absolute;
     top: 100%;

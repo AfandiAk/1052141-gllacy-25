@@ -28,14 +28,31 @@
         </ul>
         <div class="header_func_button">
             <a class="site_search" href="#">
-                <span class="visually_hidden" >Поиск</span>
+                <span class="visually_hidden" >Поиск</span> <!-- кнопка ПОИСКА   -->
                  <svg width="17" height="17" viewBox="0 0 17 17">
                     <path d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
                 </svg>
             </a>
-
-            <a class="login_button" href="#"><span>Вход</span></a>
-            <a class="header_shoping_cart" href="#"><span>Пусто</span></a>
+            <!-- выпадающая форма для поиска -->
+            <div class="search_popup_container">
+                <form class="search_form" method="get" action="http://echo.htmlacademy.ru">
+                    <input type="search" name="site_search" placeholder="Что ищем?">
+                </form>
+            </div>
+            <a class="login_button" href="#"><span>Вход</span></a> <!-- ссылка ВХОД   -->
+            <!-- Popup форма входа -->
+            <div class="enter_popup_container">
+                <form class="login_form" method="get" action="http://echo.htmlacademy.ru">
+                    <input type="email"  name="email" placeholder="Электронная почта" >
+                    <input type="password"  name="password" placeholder="Пароль" >
+                    <input type="submit" value="Войти" >
+                    <div class="reference_container">
+                    </div>
+                </form>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+            </div>
+            <a class="header_shoping_cart" href="#"><span>Пусто</span></a> <!-- ссылка/кнопка КОРЗИНА   -->
         </div>
     </nav>
     <div class="schedule_and_phone">
@@ -121,25 +138,9 @@
 </footer>
 
 
-<!-- Popup для поиска -->
-<div class="search_popup_container">
-    <form class="search_form" method="get" action="http://echo.htmlacademy.ru">
-        <input type="search" name = "site_search" placeholder="Что ищем?">
-    </form>
-</div>
 
-<!-- Popup форма входа -->
-<div class="enter_popup_container">
-    <form class="login_form" method="get" action="http://echo.htmlacademy.ru">
-        <input type="email"  name="email" placeholder="Электронная почта" >
-        <input type="password"  name="password" placeholder="Пароль" >
-        <input type="submit" value="Войти" >
-        <div class="reference_container">
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>
-        </div>
-    </form>
-</div>
+
+
 
 <!-- Popup форма обратной связи -->
 
@@ -153,9 +154,6 @@
         <button type="button" name="close">Закрыть</button>
     </form>
 </div>
-
-
-
 
 
 </body>
