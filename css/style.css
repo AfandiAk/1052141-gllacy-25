@@ -46,6 +46,15 @@ body {
     text-decoration: none;
 }
 
+.navigation_block {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.navigation_block li {
+    list-style-type: none;
+}
+
 .catalog_submenu {
     margin-left: 0;
     padding-left: 0;
