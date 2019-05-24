@@ -160,7 +160,7 @@ body {
 
 
 .our_capability {
-    background: url("../img/wafer_background.jpg") no-repeat;
+    background: url("../img/wafer_background.jpg") repeat;
     color: #323232;
 
 }
@@ -169,8 +169,8 @@ body {
     font-size: 24px;
     line-height: 30px;
     font-weight: 500;
-
 }
+
 
 .capability_list {
     margin-left: 0;
@@ -250,38 +250,33 @@ body {
     background-color: rgba(255, 255, 255, 0.98);
 }
 
-.contact_info span {
+.contact_info span,
+.contact_info a{
     display: block;
 }
 
-.contact_info span:nth-of-type(1) {
+.map_simple_text {
     font-size: 14px;
     line-height: 20px;
     font-weight: 400;
     color: #323232;
 }
 
-.contact_info span:nth-of-type(2) {
+.map_address {
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
     color: #323232;
 }
 
-.contact_info span:nth-of-type(3) {
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 400;
-    color: #323232;
-}
-
-.contact_info span:nth-of-type(4) {
+.map_phone {
     font-size: 18px;
     line-height: 22px;
     font-weight: 700;
     color: #323232;
 }
-.contact_info span:nth-of-type(5) {
+
+.map_schedule {
     font-size: 14px;
     line-height: 22px;
     font-weight: 400;
@@ -301,14 +296,24 @@ body {
 /* Footer  */
 
 
-footer li {
-    list-style-type: none;
-}
-
-footer ul {
+.social_button_list {
     margin-left: 0;
     padding-left: 0;
 }
+
+.social_button_list li {
+    list-style-type: none;
+}
+
+.footer_reference_list {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.footer_reference_list li {
+    list-style-type: none;
+}
+
 
 .social_button_container a {
 
@@ -343,27 +348,27 @@ footer ul {
 
 .footer_reference_container a:hover,
 .footer_reference_container a:focus{
-    color: #e84d37;
+    color: #ffbc9e;
 }
 
 
 .creator_block_container a:hover,
 .creator_block_container a:focus{
-    color: #e84d37;
+    color: #ffbc9e;
 }
 
 
 /* next page */
 
 
-h1 {
+.main_header {
     font-size: 35px;
     line-height: 41px;
     font-weight: 700;
     color: #ffffff;
-
-
 }
+
+
 .breadcrumbs,
 .breadcrumbs a {
     font-size: 14px;
@@ -371,6 +376,7 @@ h1 {
     font-weight: 400;
     color: #ffffff;
 }
+
 .breadcrumbs {
     margin-left: 0;
     padding-left: 0;
@@ -382,7 +388,7 @@ h1 {
 
 .breadcrumbs a:hover,
 .breadcrumbs a:focus{
-    color: #e84d37;
+    color: #ffbc9e;
 }
 
 
