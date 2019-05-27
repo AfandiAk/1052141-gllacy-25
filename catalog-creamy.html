@@ -27,7 +27,7 @@
             <li><a class="nav_block_ref" href="#">Доставка и оплата</a></li>
             <li><a class="nav_block_ref" href="#">О Компании</a></li>
         </ul>
-        <div class="header_func_button">
+        <div class="header_func_buttons">
             <div class="site_search_container">
                 <a class="header_func_btn site_search" href="#">
                     <span class="visually_hidden" >Поиск</span> <!-- кнопка ПОИСКА   -->
@@ -96,12 +96,16 @@
 
 <main>
 
-<h1 class="main_header">Сливочное мороженое</h1>
-    <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li class="breadcrumbs_active">Сливочное</li>
-    </ul>
+    <div class="main_header_wrapper">
+        <h1 class="main_header">Сливочное мороженое</h1>
+        <ul class="breadcrumbs">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li class="breadcrumbs_active">Сливочное</li>
+        </ul>
+    </div>
+
+
 
     <section class="creamy_catalog_container">
         <h2 class="visually_hidden">Наш каталог сливочного мороженого</h2>
@@ -183,7 +187,7 @@
     </section>
 </main>
 
-<footer>
+<footer class="site_footer">
     <div class="social_button_container">
         <ul class="social_button_list">
             <li class="twitter"><a href="#">TW</a></li>
@@ -195,13 +199,16 @@
     </div>
     <div class="footer_reference_container">
         <ul class="footer_reference_list">
-            <li><a href="#">Для поставщиков</a></li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13">
+                    <path fill="#FFF" d="M10.799 0c-1.35 0-2.551.65-3.3 1.661A4.097 4.097 0 0 0 4.199 0C1.875 0 0 1.806 0 4.044 0 7.223 7.499 13 7.499 13s7.499-5.777 7.499-8.956C14.998 1.806 13.123 0 10.799 0z"/></svg>
+                <a href="#">Для поставщиков</a></li>
             <li><a href="#">О производстве</a></li>
             <li><a href="#">Наши документы</a></li>
             <li><a href="#">Экологические стандарты</a></li>
         </ul>
     </div>
-    <div class="creator_block_container">
+    <div class="author_block_container">
         <p class="made_in_phrase">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
     </div>
 </footer>
