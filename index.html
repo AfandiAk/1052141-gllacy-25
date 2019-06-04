@@ -17,7 +17,7 @@
                 <a  class="nav_block_ref" href="catalog.html">Каталог</a>
                 <!-- Выпадающее подменю -->
                 <ul class="catalog_submenu">
-                    <li class="submenu_header">Новинки</li>
+                    <li><a class="new_items" href="#">Новинки</a></li>
                     <li><a href="catalog-creamy.html">Сливочное</a></li>
                     <li><a href="#">Щербеты</a></li>
                     <li><a href="#">Фруктовый лед</a></li>
@@ -38,7 +38,7 @@
                 <!-- выпадающая форма для поиска -->
                 <div class="search_popup_container">
                     <form class="search_form" method="get" action="http://echo.htmlacademy.ru">
-                        <input type="search" name="site_search" placeholder="Что ищем?">
+                        <input class="typical_input_text" type="search" name="site_search" placeholder="Что ищем?">
                     </form>
                 </div>
             </div>
@@ -54,26 +54,19 @@
                 <!-- Popup форма входа -->
                 <div class="enter_popup_container">
                     <form class="login_form" method="get" action="http://echo.htmlacademy.ru">
-                        <input type="email"  name="email" placeholder="Электронная почта" >
-                        <input type="password"  name="password" placeholder="Пароль" >
-                        <input type="submit" value="Войти" >
-                        <div class="reference_container">
-                        </div>
+                        <input class="typical_input_text" type="email"  name="email" placeholder="Электронная почта" >
+                        <input class="typical_input_text" type="password"  name="password" placeholder="Пароль" >
+                        <input class="typical_button" type="submit" value="Войти" >
                     </form>
-                    <a href="#">Забыли пароль?</a>
-                    <a href="#">Новая регистрация</a>
+                    <div class="reference_container">
+                        <a href="#">Забыли пароль?</a>
+                        <a href="#">Новая регистрация</a>
+                    </div>
                 </div>
             </div>
             <div class="hdr_btn_container">
-                <a class="header_func_btn header_shoping_cart" href="#">
+                <a class="header_func_btn header_shoping_cart empty_cart" href="#">
                     <span>Пусто</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
-                        <g fill="#FFF">
-                            <path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/>
-                            <circle cx="6.984" cy="18" r="2"/>
-                            <circle cx="15.984" cy="18" r="2"/>
-                        </g>
-                    </svg>
                 </a> <!-- ссылка/кнопка КОРЗИНА   -->
             </div>
         </div>
@@ -124,7 +117,7 @@
     <section class="hit_container outer_container">
         <h2 class="visually_hidden">Наше самое популярное мороженное</h2>
         <ul class="hit_cards">
-            <li class="hit_product_card">
+            <li class="hit product_card">
                 <div class="card_on_hover_container">
                     <div class="card_button_container">
                         <a class="card_button typical_button" href="#">Быстрый просмотр</a>
@@ -140,7 +133,7 @@
                     <a class="card_reference" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                 </div>
             </li>
-            <li class="hit_product_card">
+            <li class="hit product_card">
                 <div class="card_on_hover_container">
                     <div class="card_button_container">
                         <a class="card_button typical_button" href="#">Быстрый просмотр</a>
@@ -156,7 +149,7 @@
                     <a class="card_reference" href="#">Сливочно-кофейное с кусочками шоколада</a>
                 </div>
             </li>
-            <li class="hit_product_card">
+            <li class="hit product_card">
                 <div class="card_on_hover_container">
                     <div class="card_button_container">
                         <a class="card_button typical_button" href="#">Быстрый просмотр</a>
@@ -172,7 +165,7 @@
                     <a class="card_reference" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 </div>
             </li>
-            <li class="hit_product_card">
+            <li class="hit product_card">
                 <div class="card_on_hover_container">
                     <div class="card_button_container">
                         <a class="card_button typical_button" href="#">Быстрый просмотр</a>
@@ -240,7 +233,7 @@
                     что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
                 </p>
                 <form class="mailing_form" method="get" action="http://echo.htmlacademy.ru">
-                    <input type="email" name = "email" placeholder="Электронная почта">
+                    <input class="typical_input_text" type="email" name = "email" placeholder="Электронная почта">
                     <input class="mailing_button typical_button" type="submit" value="Отправить" >
                 </form>
             </div>
@@ -251,15 +244,17 @@
 
     <section class="position_map">
         <h2 class="visually_hidden">Наше местоположение</h2>
-        <div class="map_pointer"><span class="visually_hidden">Мы находимся здесь</span></div>
-        <div class="contact_info">
-            <span class="map_adress_text">Адрес главного офиса и офлайн-магазина:</span>
-            <span class="map_address">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
-            <span class="map_phone_text">Для заказов по телефону:</span>
-            <span class="map_phone">8 812 450-25-25</span>
-            <span class="map_schedule">(с 10 до 20 ежедневно)</span>
-            <div class="feedback_btn_container">
-                <a href="#" class="feedback_btn typical_button">Форма обратной связи</a>
+        <div class="position_container">
+            <div class="map_pointer"><span class="visually_hidden">Мы находимся здесь</span></div>
+            <div class="contact_info">
+                <span class="map_adress_text">Адрес главного офиса и офлайн-магазина:</span>
+                <span class="map_address">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
+                <span class="map_phone_text">Для заказов по телефону:</span>
+                <span class="map_phone">8 812 450-25-25</span>
+                <span class="map_schedule">(с 10 до 20 ежедневно)</span>
+                <div class="feedback_btn_container">
+                    <a href="#" class="feedback_btn typical_button">Форма обратной связи</a>
+                </div>
             </div>
         </div>
     </section>
@@ -274,25 +269,41 @@
 <footer class="site_footer outer_container">
     <div class="social_button_container">
         <ul class="social_button_list">
-            <li class="twitter"><a href="#">Twitter</a></li>
-            <li class="instagram"><a href="#">Instagram</a></li>
-            <li class="facebook"><a href="#">FaceBook</a></li>
-            <li class="vk"><a href="#">VK</a></li>
-        </ul>
+            <li>
+                <a href="#" class="social_btn">
+                    <span class="visually_hidden">Twitter</span>
+                    <img class="social_img"  src="img/twitter.svg" alt="TW">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="social_btn">
+                    <span class="visually_hidden">Instagram</span>
+                    <img class="social_img"  src="img/instagram.svg" alt="In">
+                </a>
+            </li>
+            <li>
+                <a href="#" class="social_btn">
+                    <span class="visually_hidden">FaceBook</span>
+                    <img class="social_img"  src="img/fb.svg" alt="FB">
+                </a></li>
+            <li>
+                <a href="#" class="social_btn">
+                    <span class="visually_hidden">VK</span>
+                    <img class="social_img" src="img/vk.svg" alt="VK">
+                </a>
+            </li>
+         </ul>
     </div>
     <div class="footer_reference_container">
         <ul class="footer_reference_list">
-            <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" viewBox="0 0 15 13">
-                    <path fill="#FFF" d="M10.799 0c-1.35 0-2.551.65-3.3 1.661A4.097 4.097 0 0 0 4.199 0C1.875 0 0 1.806 0 4.044 0 7.223 7.499 13 7.499 13s7.499-5.777 7.499-8.956C14.998 1.806 13.123 0 10.799 0z"/></svg>
-                <a href="#" class="accent-ref" >Для поставщиков</a>
-            </li>
-            <li><a href="#">О производстве</a></li>
+            <li><a href="#" class="accent-ref" >Для поставщиков</a></li>
             <li><a href="#">Наши документы</a></li>
+            <li><a href="#">О производстве</a></li>
             <li><a href="#">Экологические стандарты</a></li>
         </ul>
     </div>
     <div class="author_block_container">
+        <a class="academy_logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_htmlacademy.svg" width="108px"></a>
         <p class="made_in_phrase">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
     </div>
 </footer>
@@ -306,12 +317,15 @@
 
 <div class="feedback_popup_container">
     <form class="feedback_form" method="get" action="http://echo.htmlacademy.ru">
+        <button type="button" name="close">
+            <span class="visually_hidden">Закрыть</span>
+            <img src="img/cross_big.svg">
+        </button>
         <p>Мы обязательно вам ответим!</p>
-        <input type="text"  name="name" placeholder="Как вас зовут?" >
-        <input type="email"  name="email" placeholder="Ваша почта для ответа?" >
-        <textarea name="request" placeholder="Напишите что нибудь..." ></textarea>
-        <input type="submit" value="Отправить" >
-        <button type="button" name="close">Закрыть</button>
+        <input class="typical_input_text" type="text"  name="name" placeholder="Как вас зовут?" >
+        <input class="typical_input_text" type="email"  name="email" placeholder="Ваша почта для ответа?" >
+        <textarea class="typical_input_text" name="request" placeholder="Напишите что нибудь..." ></textarea>
+        <div><input class="typical_button" type="submit" value="Отправить"></div>
     </form>
 </div>
 
