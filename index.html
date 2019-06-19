@@ -16,7 +16,7 @@
             <li class="submenu_control navigation_btn_container">
                 <a  class="nav_block_ref" href="#">Каталог</a>
                 <!-- Выпадающее подменю -->
-                <ul id="asds" class="catalog_submenu">
+                <ul  class="catalog_submenu">
                     <li><a class="new_items" href="#" >Новинки</a></li>
                     <li><a href="catalog-creamy.html">Сливочное</a></li>
                     <li><a href="#">Щербеты</a></li>
@@ -98,7 +98,47 @@
 
 <!--здесь основной контент-->
 
-    <!--слайдер-->
+    <section class="slider_container outer_container">
+        <ul class="slider">
+            <li class="slide active_slide">
+                    <img class="slide_img" src="img/slider_page1.png" alt="Крем-брюле и пломбир с малиновым джемом"
+                        width="1045" height="881">
+                <div class="slide_text_container">
+                    <p class="slide_bait">Крем-брюле и пломбир с малиновым джемом</p>
+                </div>
+                <div class="slide_ref_container">
+                    <a class="slide_btn typical_button" href="#">Давайте оба!</a>
+                </div>
+            </li>
+            <li class="slide">
+                    <img class="slide_img" src="img/slider_page2.png" alt="Шоколадный пломбир и лимонный сорбет"
+                    width="1065" height="859">
+                <div class="slide_text_container">
+                    <p class="slide_bait">Шоколадный пломбир и лимонный сорбет </p>
+                </div>
+                <div class="slide_ref_container">
+                    <a class="slide_btn typical_button" href="#">Давайте оба!</a>
+                </div>
+            </li>
+            <li class="slide">
+                    <img class="slide_img" src="img/slider_page3.png" alt="Пломбир с помадкой и клубничный щербет"
+                    width="1079" height="854">
+                <div class="slide_text_container">
+                    <p class="slide_bait">Пломбир с помадкой и&nbsp;клубничный щербет</p>
+                </div>
+                <div class="slide_ref_container">
+                    <a class="slide_btn typical_button" href="#">Давайте оба!</a>
+                </div>
+            </li>
+        </ul>
+        <div class="slide_switcher">
+            <button class="switch_btn active_btn" type="button" name="slide_switcher1" ></button>
+            <button class="switch_btn" type="button" name="slide_switcher2" ></button>
+            <button class="switch_btn" type="button" name="slide_switcher3" ></button>
+        </div>
+
+
+    </section>
 
     <!--блок рекламы-->
     <div class="ad_wrapper outer_container">
@@ -145,7 +185,7 @@
                     <span class="card_weight">/кг</span>
                 </p>
                 <div class="card_reference_container">
-                    <a class="card_reference" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                    <a class="card_reference transparent_underline" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                 </div>
             </li>
             <li class="hit product_card" tabindex="0" aria-label="Карточка товара">
@@ -161,7 +201,7 @@
                     <span class="card_weight">/кг</span>
                 </p>
                 <div class="card_reference_container">
-                    <a class="card_reference" href="#">Сливочно-кофейное с кусочками шоколада</a>
+                    <a class="card_reference transparent_underline" href="#">Сливочно-кофейное с кусочками шоколада</a>
                 </div>
             </li>
             <li class="hit product_card" tabindex="0" aria-label="Карточка товара">
@@ -261,7 +301,12 @@
 
     <section class="position_map">
         <h2 class="visually_hidden">Наше местоположение</h2>
+
         <div class="position_container">
+            <div class="interactive_map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6051438017507!2d30.322114004818555!3d59.938693973573116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1560164932482!5m2!1sru!2sru"
+                        width="1200" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
             <div class="map_pointer"><span class="visually_hidden">Мы находимся здесь</span></div>
             <div class="contact_info">
                 <span class="map_adress_text">Адрес главного офиса и офлайн-магазина:</span>
@@ -269,8 +314,8 @@
                 <span class="map_phone_text">Для заказов по телефону:</span>
                 <span class="map_phone">8 812 450-25-25</span>
                 <span class="map_schedule">(с 10 до 20 ежедневно)</span>
-                <div class="feedback_btn_container">
-                    <a href="#" id="ref_control" class="feedback_btn typical_button">Форма обратной связи</a>
+                <div class="map_btn_container">
+                    <a href="#" id="ref_control" class="map_btn typical_button">Форма обратной связи</a>
                 </div>
             </div>
         </div>
@@ -313,17 +358,19 @@
     </div>
     <div class="footer_reference_container">
         <ul class="footer_reference_list">
-            <li><a href="#" class="accent-ref" >Для поставщиков</a></li>
-            <li><a href="#">Наши документы</a></li>
-            <li><a href="#">О производстве</a></li>
-            <li><a href="#">Экологические стандарты</a></li>
+            <li><a href="#" class="footer_ref accent_ref" >Для поставщиков</a></li>
+            <li><a href="#" class="footer_ref" >Наши документы</a></li>
+            <li><a href="#" class="footer_ref">О производстве</a></li>
+            <li><a href="#" class="footer_ref">Экологические стандарты</a></li>
         </ul>
     </div>
     <div class="author_block_container">
         <a class="academy_logo" href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo_htmlacademy.svg" width="108" height="36" alt="HTML Academy logo">
         </a>
-        <p class="made_in_phrase">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
+        <p class="made_in_phrase">Сделано в
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="author_ref">HTML Academy</a>
+            © 2019</p>
     </div>
 </footer>
 
@@ -333,18 +380,17 @@
 
 
 <!-- Popup форма обратной связи -->
-
+<div class="overlay"></div>
 <div class="feedback_popup_container" id="feedback_modal">
     <form class="feedback_form" method="get" action="http://echo.htmlacademy.ru">
-        <button type="button" name="close" id="close">
+        <button class="close_btn" type="button" name="close" id="close">
             <span class="visually_hidden">Закрыть</span>
-            <img src="img/cross_big.svg" alt="Закрыть" width="18">
         </button>
         <p>Мы обязательно вам ответим!</p>
         <input class="typical_input_text" type="text"  name="name" placeholder="Как вас зовут?" >
         <input class="typical_input_text" type="email"  name="email" placeholder="Ваша почта для ответа?" >
         <textarea class="typical_input_text" name="request" placeholder="Напишите что нибудь..." ></textarea>
-        <div><input class="typical_button" type="submit" value="Отправить"></div>
+        <div class="feedback_btn_container" ><input class="typical_button" type="submit" value="Отправить"></div>
     </form>
 </div>
 
@@ -352,13 +398,35 @@
     var modal = document.getElementById('feedback_modal');
     var ref_btn = document.getElementById('ref_control');
     var cls = document.getElementById('close');
+    var ovrl = document.querySelector('.overlay');
 
     ref_btn.onclick = function() {
         modal.style.display = 'block';
+        ovrl.style.display = 'block';
     };
     cls.onclick = function() {
         modal.style.display = 'none';
+        ovrl.style.display = 'none';
     };
+
+
+
+
+    var doc_body = document.querySelector('body');
+    var slides = document.querySelectorAll('.slider .slide');
+    var switchers = document.querySelectorAll('.switch_btn');
+    var currentSlide = 0;
+    var slideInterval = setInterval(nextSlide,10000);
+
+    function nextSlide() {
+        slides[currentSlide].className = 'slide';
+        switchers[currentSlide].className = 'switch_btn';
+        currentSlide = (currentSlide+1)%slides.length;
+        slides[currentSlide].className = 'slide active_slide';
+        doc_body.className = 'body_background' + (currentSlide+1);
+        switchers[currentSlide].className = 'switch_btn active_btn';
+    }
+
 
 </script>
 

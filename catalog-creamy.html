@@ -92,24 +92,22 @@
                                 <li class="item_description">
                                     <button type="button" name="btn_delete" class="item_delete">
                                         <span class="visually_hidden">Удалить товар</span>
-                                        <img src="img/cross_small.svg" alt="Удалить товар" width="11" height="11">
                                     </button>
                                     <img src="img/creamy_orange.jpg" alt="Сливочно апельсиновое с цитрусовой стружкой"
                                          width="33" height="33">
                                     <span class="description">Пломбир с апельсиновым джемом</span>
                                     <span class="cost">1,5 кг х </span><span class="price"> 200 руб.</span>
-                                    <span class="total_price">300руб.</span>
+                                    <span class="total_price">300 руб.</span>
                                 </li>
                                 <li class="item_description">
                                     <button type="button" name="btn_delete" class="item_delete">
                                         <span class="visually_hidden">Удалить товар</span>
-                                        <img src="img/cross_small.svg" alt="Удалить товар" width="11" height="11">
                                     </button>
                                     <img src="img/creamy_strawberry.jpg" alt="Сливочно-клубничное с присыпкой из белого
                                     шоколада" width="33" height="33">
                                     <span class="description">Клубничный пломбир с присыпкой из белого шоколада</span>
                                     <span class="cost">1,5 кг х </span><span class="price"> 300 руб.</span>
-                                    <span class="total_price">450руб.</span>
+                                    <span class="total_price">450 руб.</span>
                                 </li>
                             </ul>
                             <div class="total_shoping_cart_container">
@@ -129,16 +127,75 @@
 
 <main>
 
+
+
     <div class="main_header_wrapper outer_container">
         <h1 class="main_header">Сливочное мороженое</h1>
         <ul class="breadcrumbs">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="#">Каталог</a></li>
-            <li class="breadcrumbs_active">Сливочное</li>
+            <li><a href="index.html" class="breadcrumbs_ref">Главная</a></li>
+            <li><a href="#" class="breadcrumbs_ref">Каталог</a></li>
+            <li><a class="breadcrumbs_ref active">Сливочное</a></li>
         </ul>
     </div>
 
-
+    <section class="catalog_filter outer_container">
+        <h2 class="visually_hidden">Фильтр товаров</h2>
+        <form class="filter_form" method="get" action="http://echo.htmlacademy.ru">
+            <div class="sorting_container fieldset_container">
+                <label class="fieldset_label" for="sorting">Сортировка:</label>
+                <div class="elem_container select_container">
+                    <select class="select_sorting" name="sorting" id="sorting">
+                        <option value="popularity">по популярности</option>
+                    </select>
+                </div>
+            </div>
+            <div class="price_container fieldset_container">
+                <p class="fieldset_label"> Цена: <output name="min_price">100</output> руб. – <output name="max_price">500</output> руб.</p>
+                <input type="hidden" name="input_min_price" value="100" />
+                <input type="hidden" name="input_max_price" value="500" />
+                <div class="elem_container double_range_container">
+                    <div class="double_range">
+                        <div class="scale"><div class="middle_scale" ></div></div>
+                        <div class="elem_slider slider_min"></div>
+                        <div class="elem_slider slider_max"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="fat_container fieldset_container">
+                <p class="fieldset_label" >Жирность:</p>
+                <div class="elem_container fat_radio_container">
+                    <input type="radio" class="fat_radio visually_hidden" id="fat_0" name="fat" value="0%">
+                    <label for="fat_0">0%</label>
+                    <input type="radio" class="fat_radio visually_hidden" id="fat_10" name="fat" value="10%-" checked>
+                    <label for="fat_10">до 10%</label>
+                    <input type="radio" class="fat_radio visually_hidden" id="fat_30" name="fat" value="30%-">
+                    <label for="fat_30">до 30%</label>
+                    <input type="radio" class="fat_radio visually_hidden" id="fat_more_30" name="fat" value="30%+">
+                    <label for="fat_more_30">выше 30%</label>
+                </div>
+            </div>
+            <div class="fillers_container fieldset_container">
+                <p class="fieldset_label">Наполнители:</p>
+                <div class="elem_container fillers_checkbox_container">
+                    <input type="checkbox" class="fillers_checkbox visually_hidden" name="chockolate" id="chockolate" checked>
+                    <label for="chockolate">шоколадные</label>
+                    <input type="checkbox" class="fillers_checkbox visually_hidden" name="sugar_powder" id="sugar_powder" checked>
+                    <label for="sugar_powder">сахарные присыпки</label>
+                    <input type="checkbox" class="fillers_checkbox visually_hidden" name="fruits" id="fruits">
+                    <label for="fruits">фрукты</label>
+                    <input type="checkbox" class="fillers_checkbox visually_hidden" name="syrup" id="syrup">
+                    <label for="syrup">сиропы</label>
+                    <input type="checkbox" class="fillers_checkbox visually_hidden" name="jam" id="jam">
+                    <label for="jam">джемы</label>
+                </div>
+            </div>
+            <div class="submit_container fieldset_container">
+                <div class="elem_container filter_btn_container">
+                    <input type="submit" class="filter_btn" value="Применить">
+                </div>
+            </div>
+        </form>
+    </section>
 
     <section class="creamy_catalog_container outer_container">
         <h2 class="visually_hidden">Наш каталог сливочного мороженого</h2>
@@ -376,17 +433,19 @@
     </div>
     <div class="footer_reference_container">
         <ul class="footer_reference_list">
-            <li><a href="#" class="accent-ref" >Для поставщиков</a></li>
-            <li><a href="#">Наши документы</a></li>
-            <li><a href="#">О производстве</a></li>
-            <li><a href="#">Экологические стандарты</a></li>
+            <li><a href="#" class="footer_ref accent_ref">Для поставщиков</a></li>
+            <li><a href="#" class="footer_ref">Наши документы</a></li>
+            <li><a href="#" class="footer_ref">О производстве</a></li>
+            <li><a href="#" class="footer_ref">Экологические стандарты</a></li>
         </ul>
     </div>
     <div class="author_block_container">
         <a class="academy_logo" href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img/logo_htmlacademy.svg" alt="HTML Academy logo" width="108" height="36">
         </a>
-        <p class="made_in_phrase">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
+        <p class="made_in_phrase">Сделано в
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="author_ref">HTML Academy</a>
+            © 2019</p>
     </div>
 </footer>
 
