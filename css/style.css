@@ -871,7 +871,6 @@ img {
 
 .switch_btn {
     position: relative;
-   /* box-sizing: content-box;*/
     z-index: 10;
     font: inherit;
     padding: 0;
@@ -894,6 +893,9 @@ img {
     background-color: rgba(248, 247, 244,0.4);
 }
 
+.switch_btn:active:not(.active_btn) {
+    background-color: #ffffff;
+}
 
 /* AD block */
 
@@ -1653,6 +1655,7 @@ img {
 
 .academy_logo {
     display: block;
+    margin-top: 2px;
 }
 
 .academy_logo img{
@@ -1662,7 +1665,7 @@ img {
 
 .made_in_phrase {
     margin: 0;
-    margin-top: 7px;
+    margin-top: 6px;
 }
 
 .author_ref {
@@ -2222,4 +2225,105 @@ img {
     margin-bottom: 38px;
 }
 
+
+.pagination_container {
+    padding-left: 27px;
+    padding-right: 27px;
+    margin-top: 44px;
+
+}
+
+.pagination_list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+
+}
+
+.pagination_list>li {
+    margin-right: 3px;
+}
+
+.pagination_list>li:last-child {
+    margin-right: 0;
+}
+
+
+.pagination_ref {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    border-radius: 50%;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 3px;
+}
+
+.right_arrow_item {
+    position: relative;
+    margin-left: 8px;
+}
+
+.right_arrow_item::after {
+    position: absolute;
+    top: -3px;
+    right: 2px;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    transform: rotate(225deg);
+}
+
+.left_arrow_item {
+    position: relative;
+    margin-right: 8px;
+}
+
+.left_arrow_item::before {
+    position: absolute;
+    top: -3px;
+    right: 2px;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    transform: rotate(45deg);
+}
+.pagination_ref.disable_item::before,
+.pagination_ref.disable_item::after {
+    border-color: rgba(255,255,255,0.2);
+}
+
+.disable_item {
+    cursor: default;
+}
+
+.pagination_num_ref.current_page{
+    background-color: #ffffff;
+    color: #323232;
+}
+
+.pagination_num_ref:hover:not(.current_page),
+.pagination_num_ref:focus:not(.current_page){
+    background-color: rgba(255,255,255,0.2);
+}
+
+.pagination_num_ref:active:not(.current_page) {
+    background-color: #ffffff;
+    color: #323232;
+}
 
