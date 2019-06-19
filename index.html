@@ -5,10 +5,9 @@
     <title>Магазин мороженного Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/prefix_style.css" rel="stylesheet">
 </head>
 <body>
-
 <header class="site_header outer_container">
     <nav class="main_navigation">
         <a class="main_logo" ><img src="img/main_logo.svg" alt="Логотип сайта" width="154" height="64"></a>
@@ -90,14 +89,8 @@
         <span class="phone">8 812 450-25-25</span>
     </div>
 </header>
-
-
 <main>
-
-
-
 <!--здесь основной контент-->
-
     <section class="slider_container outer_container">
         <ul class="slider">
             <li class="slide active_slide">
@@ -136,10 +129,7 @@
             <button class="switch_btn" type="button" name="slide_switcher2" ></button>
             <button class="switch_btn" type="button" name="slide_switcher3" ></button>
         </div>
-
-
     </section>
-
     <!--блок рекламы-->
     <div class="ad_wrapper outer_container">
         <section class="section_ad ad_jam">
@@ -150,9 +140,7 @@
             <div class="ad_button_container">
                 <a href="#" class="ad_btn_reference typical_button">Хочу варенье!</a>
             </div>
-
         </section>
-
         <section class="section_ad ad_chockolate">
             <h2 class="visually_hidden">Реклама шоколада</h2>
             <span class="ad_bait">Шоколадки даром!</span>
@@ -163,11 +151,7 @@
             </div>
         </section>
      </div>
-
-
-
     <!--галерея хит товаров-->
-
     <section class="hit_container outer_container">
         <h2 class="visually_hidden">Наше самое популярное мороженное</h2>
         <ul class="hit_cards">
@@ -240,8 +224,6 @@
             </li>
         </ul>
     </section>
-
-
     <!--блок почему мы-->
     <div class="outer_container capability_container">
         <section class="our_capability">
@@ -270,9 +252,6 @@
             </ul>
         </section>
     </div>
-
-
-
     <div class="blog_and_mailing_wrapper outer_container">
         <!--наш блог-->
         <article class="blog_news bam_block">
@@ -281,7 +260,6 @@
                 <a class="blog_news_reference" href="#">10 способов сервировки фруктовых щербетов к столу</a>
             </div>
         </article>
-
         <!--Подписка на рассылку-->
         <section class="mailing_section bam_block">
             <div class="base_ground">
@@ -296,12 +274,8 @@
             </div>
         </section>
     </div>
-
-
-
     <section class="position_map">
         <h2 class="visually_hidden">Наше местоположение</h2>
-
         <div class="position_container">
             <div class="interactive_map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6051438017507!2d30.322114004818555!3d59.938693973573116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1560164932482!5m2!1sru!2sru"
@@ -320,11 +294,7 @@
             </div>
         </div>
     </section>
-
-
 </main>
-
-
 <footer class="site_footer outer_container">
     <div class="social_button_container">
         <ul class="social_button_list">
@@ -370,12 +340,6 @@
             © 2019</p>
     </div>
 </footer>
-
-
-
-
-
-
 <!-- Popup форма обратной связи -->
 <div class="overlay"></div>
 <div class="feedback_popup_container" id="feedback_modal">
@@ -390,43 +354,6 @@
         <div class="feedback_btn_container" ><input class="typical_button" type="submit" value="Отправить"></div>
     </form>
 </div>
-
-<script>
-    var modal = document.getElementById('feedback_modal');
-    var ref_btn = document.getElementById('ref_control');
-    var cls = document.getElementById('close');
-    var ovrl = document.querySelector('.overlay');
-
-    ref_btn.onclick = function() {
-        modal.style.display = 'block';
-        ovrl.style.display = 'block';
-    };
-    cls.onclick = function() {
-        modal.style.display = 'none';
-        ovrl.style.display = 'none';
-    };
-
-
-
-
-    var doc_body = document.querySelector('body');
-    var slides = document.querySelectorAll('.slider .slide');
-    var switchers = document.querySelectorAll('.switch_btn');
-    var currentSlide = 0;
-    var slideInterval = setInterval(nextSlide,10000);
-
-    function nextSlide() {
-        slides[currentSlide].className = 'slide';
-        switchers[currentSlide].className = 'switch_btn';
-        currentSlide = (currentSlide+1)%slides.length;
-        slides[currentSlide].className = 'slide active_slide';
-        doc_body.className = 'body_background' + (currentSlide+1);
-        switchers[currentSlide].className = 'switch_btn active_btn';
-    }
-
-
-</script>
-
-
+<script type="text/javascript" src="js/main_js.js"></script>
 </body>
 </html>
