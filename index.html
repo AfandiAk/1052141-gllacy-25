@@ -94,6 +94,7 @@
 <main>
     <!--здесь основной контент-->
     <section class="slider_container outer_container">
+        <h2 class="visually_hidden">Самые вкусные парочки</h2>
         <ul class="slider">
             <li class="slide active_slide">
                 <img alt="Крем-брюле и пломбир с малиновым джемом" class="slide_img" height="881"
@@ -323,19 +324,19 @@
     </div>
 </footer>
 <!-- Popup форма обратной связи -->
-<div class="overlay"></div>
-<div class="feedback_popup_container" id="feedback_modal">
+<div class="overlay rise"></div>
+<div class="feedback_popup_container rise" id="feedback_modal">
     <form action="http://echo.htmlacademy.ru" class="feedback_form" method="get">
         <button class="close_btn" id="close" name="close" type="button">
             <span class="visually_hidden">Закрыть</span>
         </button>
         <p>Мы обязательно вам ответим!</p>
-        <input class="typical_input_text" name="name" placeholder="Как вас зовут?" type="text">
-        <input class="typical_input_text" name="email" placeholder="Ваша почта для ответа?" type="email">
-        <textarea class="typical_input_text" name="request" placeholder="Напишите что нибудь..."></textarea>
+        <input class="typical_input_text login" name="name" placeholder="Как вас зовут?" type="text">
+        <input class="typical_input_text email" name="email" placeholder="Ваша почта для ответа?" type="email">
+        <textarea class="typical_input_text message" name="request" placeholder="Напишите что нибудь..."></textarea>
         <div class="feedback_btn_container"><input class="typical_button" type="submit" value="Отправить"></div>
     </form>
 </div>
-<script type="text/javascript" src="js/main_js.js"></script>
+<script src="js/min_main_js.js"></script>
 </body>
 </html>

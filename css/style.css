@@ -122,16 +122,6 @@ img {
     color: #999999;
 }
 
-.typical_input_text:-ms-input-placeholder {
-    font-weight: 400;
-    color: #999999;
-}
-
-.typical_input_text::-ms-input-placeholder {
-    font-weight: 400;
-    color: #999999;
-}
-
 .typical_input_text {
     font-weight: 700;
     padding-left: 14px;
@@ -1288,6 +1278,7 @@ img {
     color: #323232;
     background: url("../img/strawberry_background.jpg") no-repeat -52px -225px;
     background-color: #ffffff;
+    min-height: 219px;
 }
 
 .blog_header {
@@ -1828,7 +1819,7 @@ img {
 .feedback_form input[name=name] {
     font-size: 16px;
     font-weight: 700;
-    line-height: 24;
+    line-height: 24px;
     width: 267px;
     height: 44px;
     margin-top: 20px;
@@ -1837,7 +1828,7 @@ img {
 .feedback_form input[name=email] {
     font-size: 16px;
     font-weight: 700;
-    line-height: 24;
+    line-height: 24px;
     width: 267px;
     height: 44px;
     margin-top: 20px;
@@ -2427,4 +2418,96 @@ img {
 .pagination_num_ref:active:not(.current_page) {
     color: #323232;
     background-color: #ffffff;
+}
+
+@-webkit-keyframes rise {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0.1);
+        transform: scale(0.1);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes rise {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0.1);
+        transform: scale(0.1);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.rise {
+    -webkit-animation-name: rise;
+    animation-name: rise;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes attention {
+    from {
+        -webkit-box-shadow: 0 0 0 3px rgba(255, 0, 0, 1);
+        box-shadow: 0 0 0 3px rgba(255, 0, 0, 1);
+    }
+    20% {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    40% {
+        -webkit-box-shadow: 0 0 0 3px rgba(255, 0, 0, 1);
+        box-shadow: 0 0 0 3px rgba(255, 0, 0, 1);
+    }
+    60% {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    80% {
+        -webkit-box-shadow: 0 0 0 3px rgba(255, 0, 0, 1);
+        box-shadow: 0 0 0 3px rgba(255, 0, 0, 1);
+    }
+    to {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+@keyframes attention {
+    from {
+        -webkit-box-shadow: 0 0 0 3px rgba(255, 0, 0, 1);
+        box-shadow: 0 0 0 3px rgba(255, 0, 0, 1);
+    }
+    20% {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    40% {
+        -webkit-box-shadow: 0 0 0 3px rgba(255, 0, 0, 1);
+        box-shadow: 0 0 0 3px rgba(255, 0, 0, 1);
+    }
+    60% {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    80% {
+        -webkit-box-shadow: 0 0 0 3px rgba(255, 0, 0, 1);
+        box-shadow: 0 0 0 3px rgba(255, 0, 0, 1);
+    }
+    to {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+.attention {
+    -webkit-animation-name: attention;
+    animation-name: attention;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
 }
